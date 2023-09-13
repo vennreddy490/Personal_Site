@@ -1,7 +1,15 @@
+/* Important: I know I have a lot of selectors. 
+To make it more readable, and for ease of grading, I 
+have commented where each requirement is met to make
+it clear all requirements were satisfied. */
+
+/* Removed default page margins */
 body {
     margin: 0;
 }
 
+/* Differentiated Nav. Google font use 1,
+made nav flex parent. */
 nav {
     padding-right: 10px;
     background-color: #F8F0E5;
@@ -12,20 +20,22 @@ nav {
     font-family: 'Roboto', sans-serif;
 }
 
-/* TODO: Where I left off */
+/* Anchor tag styling. Also other link requirements.  */
 nav a {
-    color: blue;
     background-color: white;
     color: blue;
     border: 2px solid black;
     padding: 10px;
 }
 
+/* Link hover requirements. */
 nav a:hover {
     color: BLACK;
     background-color: lightblue;
 }
 
+/* Differentiated Footer. Also, changed font
+ color (#1) and made footer a flex parent */
 footer {
     background-color: #333;
     /* border-color: lightblue; */
@@ -36,25 +46,35 @@ footer {
     justify-content: center;
 }
 
+/* Footer anchor tag styling */
 footer a {
     color: white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }    
 
+/* Foot anchor tag hover styling, and
+other link requirements. */
 footer a:hover {
     color: black;
     background-color: lightblue;
 }
 
+/* Section tag with unique class name.
+Also: background color, padding, google fonts,
+and change font color (#2) requirements. */
 .Top_Section {
     background-color: #EADBC8;
     padding-top: 20px;
     padding-bottom: 315px;
     text-align: center;
     font-family: 'Comic Neue', cursive;
+    color: midnightblue;
 }
 
+/* Second section tag with unique class name.
+Also: background color, padding, and google font 
+application requirements.*/
 .Bottom_Section {
     padding-top: 15px;
     background-color: #DAC0A3;
@@ -81,10 +101,17 @@ footer a:hover {
     font-size: 110%;    
 }
 
+/* Changed font color (#3) */
 #UGA {
     color: red;
 }
 
+/* Changed font color (#4) */
+.description {
+    color: midnightblue;
+}
+
+/* Horizontal Rule styling requirements */
 #horizontal_rule {
     border-style: dotted;
     border-color: #1f3f6d;
@@ -93,6 +120,8 @@ footer a:hover {
     margin-right: 40px;
 }
 
+/* Absolute postioned image, and
+border styling requirement */
 #badminton{
     border: 3px solid #333;
     border-radius: 10px;
@@ -101,10 +130,12 @@ footer a:hover {
     top: 190px;
     /* left: 70px; */
     left: 20%;
-
+    
     
 }
 
+/* Absolute positioned image, and
+border styling requirement. */
 #football {
     border: 3px solid #333;
     border-radius: 10px;
@@ -112,9 +143,14 @@ footer a:hover {
     top: 190px;
     /* left: 470px; */
     right: 20%;
-
+    
 }
 
+#headshot {
+    border-radius: 15px 10px 15px 10px;
+}
+
+/* card class with required styling separation */
 .card {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -122,6 +158,7 @@ footer a:hover {
     background-color: aliceblue;
 }
 
+/* Three-col class with grid display requirements */
 .three-col {
     display: grid;
     gap: 10px;
@@ -130,16 +167,22 @@ footer a:hover {
     margin-right: 30px;
 }
 
+
+/* Card image styling requirements. */
 .card_image {
     border-bottom: 3px solid #333;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
+
+/* Following six selectors are used as part of
+"appropriate list styling" requirements */
 #ul_languages {
     text-align: center;
 }
 
+/* First font size requirement */
 #roles {
     display: grid;
     grid-template-columns: 0.75fr 1.10fr;
@@ -152,10 +195,8 @@ footer a:hover {
     margin-bottom: 20px;
 }
 
-#headshot {
-    border-radius: 15px 10px 15px 10px;
-}
 
+/* Second font size requirement */
 #skills_list {
     display: grid;
     grid-template-columns: 1fr 1.10fr;
@@ -174,6 +215,28 @@ footer a:hover {
     font-size: 110%;
 }
 
+/* Remaining classes used to style the contact
+ page and its elements. Also, changed font 
+ color (3) */
+.Top_Contact {
+    background-color: #EADBC8;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    color: midnightblue;
+}
+
+/* Horizontal Rule styling requirements */
+#hr_contact {
+    border-style: dotted;
+    border-color: #1f3f6d;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Class one-col styling requirements to
+create form container */
 .one-col {
     display: grid;
     gap: 10px;
@@ -183,22 +246,12 @@ footer a:hover {
     padding-bottom: 10px;
 }
 
-.Top_Contact {
-    background-color: #EADBC8;
-    padding-top: 20px;
-    padding-bottom: 1px;
-    text-align: center;
-    font-family: 'Comic Neue', cursive;
-}
-
+/* Following six selectors are used as part of
+"appropriate input styling" requirement.*/
 #contact_form {
     font-family: 'Comic Neue', cursive;
     text-align: center;
     padding-top: 20px;
-    /* display: grid;
-    gap: 10px;
-    grid-template-columns: 0.2fr 1fr;
-   */
 }
 
 #textarea {
@@ -218,23 +271,15 @@ footer a:hover {
     background-color: #DAC0A3;
 }
 
-#hr_contact {
-    border-style: dotted;
-    border-color: #1f3f6d;
-    margin-top: 0;
-    margin-bottom: 0;
-    /* margin-left: 40px;
-    margin-right: 40px; */
-}
-
 #email_div {
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
-/* 
-#email {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
+#submit {
+    margin-top: 10px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    font-size: 100%;
+}
+
